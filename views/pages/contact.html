@@ -1,0 +1,146 @@
+<html>
+  <head></head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/views/pages/experience.html">Experience</a>
+        </li>
+        <li>
+          <a href="/views/pages/works.html">Works</a>
+        </li>
+        <li>
+          <a href="/views/pages/contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>This is contact.html</h1>
+
+    <form onsubmit="sendMessage(event)">
+      <label for="fName">First Name</label>
+      <input type="text" name="fName" id="fName" />
+
+      <br />
+
+      <label for="lName">Last Name</label>
+      <input type="text" name="lName" id="lName" />
+
+      <br />
+
+      <textarea
+        id="message"
+        cols="30"
+        rows="5"
+        placeholder="Message here"
+      ></textarea>
+
+      <br />
+
+      <input type="submit" name="submit" id="submit" value="Click here" />
+    </form>
+
+    <span>Full Name:</span>
+    <span id="ref1"></span>
+    <span id="ref2"></span>
+
+    <br />
+    <br />
+
+    <span>Message:</span>
+    <span id="ref3"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+      function sendMessage(e) {
+        e.preventDefault();
+        let fName = document.getElementById("fName");
+        let lName = document.getElementById("lName");
+        let message = document.getElementById("message");
+
+        console.log("fName", fName.value);
+        console.log("lName", lName.value);
+        console.log("message", message.value);
+
+        let ref1 = document.getElementById("ref1");
+        let ref2 = document.getElementById("ref2");
+        let ref3 = document.getElementById("ref3");
+
+        ref1.innerHTML = fName.value;
+        ref2.innerHTML = lName.value;
+        ref3.innerHTML = message.value;
+      }
+    </script>
+  </body>
+</html>
