@@ -1,0 +1,282 @@
+<html>
+  <head>
+    <style>
+      table {
+        border: 1px solid black;
+      }
+
+      td {
+        padding: 20px;
+        background-color: aqua;
+      }
+
+      input[checked="false"] {
+        width: 50px;
+        height: 50px;
+      }
+
+      .bg-red {
+        background-color: black;
+        color: white;
+      }
+      .bg-red:hover {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/views/pages/experience.html">Experience</a>
+        </li>
+        <li>
+          <a href="/views/pages/aboutme.html">About Me</a>
+        </li>
+        <li>
+          <a href="/views/pages/works.html">Works</a>
+        </li>
+        <li>
+          <a href="/views/pages/contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>About Me</h1>
+    <p>I am Nilaw Manandhar</p>
+
+    <!-- Below code is about my educational history -->
+    <!-- <table style="border-collapse: collapse" border="2">
+      <caption>
+        This is my Education Detail
+      </caption>
+      <thead>
+        <tr>
+          <th>LEVEL</th>
+          <th>SCHOOL NAME</th>
+          <th>PASS YEAR</th>
+          <th>maths</th>
+          <th>science</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>slc</td>
+          <td rowspan="2">mahendra bhawan</td>
+          <td>2058</td>
+          <td colspan="2">99</td>
+        </tr>
+        <tr>
+          <td>+2</td>
+          <td>2060</td>
+          <td>99</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+    </table> -->
+
+    <table>
+      <tr>
+        <td style="background-color: #a23"></td>
+        <td style="background-color: blue"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td style="background-color: blueviolet"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <!-- 
+      QUIZ QUESTIONS
+     -->
+    <div>
+      <!-- Question 1 -->
+      <form onsubmit="checkQues1(event)">
+        <h3>
+          1. What is the correct syntax for adding inline CSS to an HTML
+          element?
+        </h3>
+        <input type="radio" name="ans" />
+        <label for="">
+          <span><</span>div styles="color: red">Am i Correct?<span><</span>/div>
+        </label>
+
+        <br />
+        <br />
+
+        <input type="radio" name="ans" />
+        <span><</span>div style="color: red">Am i Correct?<span><</span>/div>
+
+        <br />
+        <br />
+
+        <input type="radio" name="ans" />
+        <span><</span>div href='color: red'>Am i Correct?<span><</span>/div>
+
+        <br />
+        <br />
+
+        <input type="radio" name="ans" />
+        <span><</span>div src="color: red">Am i Correct?<span><</span>/div>
+
+        <br />
+        <br />
+        <br />
+        <input type="submit" name="" id="" value="Check answer" />
+        <h2 id="result1"></h2>
+      </form>
+
+      <!-- Question 2 -->
+      <form onsubmit="checkQues2(event)">
+        <h3>
+          2. Which of the following is the correct syntax for adding an internal
+          stylesheet to an HTML document?
+        </h3>
+        <input type="radio" name="ans" checked="false" />
+        <br />
+        <label for="">
+          <span><</span>style><br />
+          &nbsp;&nbsp;&nbsp;color: red
+          <br /><span><</span>/style>
+        </label>
+
+        <br />
+        <br />
+
+        <input type="radio" name="ans" checked="true" />
+        <br />
+        <label for="">
+          <span><</span>style><br />
+          &nbsp;&nbsp;&nbsp;color red;
+          <br /><span><</span>/style>
+        </label>
+
+        <br />
+        <br />
+
+        <input type="radio" name="ans" />
+        <br />
+        <label for="">
+          <span><</span>styles><br />
+          &nbsp;&nbsp;&nbsp;color: red;
+          <br /><span><</span>/styles>
+        </label>
+
+        <br />
+        <br />
+
+        <input type="radio" name="ans" />
+        <br />
+        <label for="">
+          <span><</span>style><br />
+          &nbsp;&nbsp;&nbsp;colour: red;
+          <br /><span><</span>/style>
+        </label>
+
+        <br />
+        <br />
+        <br />
+        <input
+          class="bg-red"
+          type="submit"
+          name=""
+          id=""
+          value="Check answer"
+        />
+        <h2 id="result2"></h2>
+      </form>
+
+      <!-- Question 3 -->
+      <form onsubmit="checkQues3(event)">
+        <h3>
+          3. What is the correct syntax for linking an external stylesheet to an
+          HTML document?
+        </h3>
+        <input type="radio" name="ans" />
+        <label for=""> <span><</span>links src="./style.css"> </label>
+
+        <br />
+        <br />
+
+        <input type="radio" name="ans" />
+        <label for="">
+          <span><</span>links rel="stylesheet" href="./style.css">
+        </label>
+
+        <br />
+        <br />
+
+        <input type="radio" name="ans" />
+        <label for="">
+          <span><</span>link rel="stylesheet" href="./style.css"<span></span>>
+        </label>
+
+        <br />
+        <br />
+
+        <input type="radio" name="ans" />
+        <label for="">
+          <span><</span>link rel="stylesheet" src="./style.css"><span></span>
+        </label>
+
+        <br />
+        <br />
+        <br />
+        <input type="submit" name="" id="" value="Check answer" />
+        <h2 id="result3"></h2>
+      </form>
+    </div>
+
+    <script>
+      function checkQues1(e) {
+        e.preventDefault();
+        if (e.target[1].checked) {
+          document.getElementById("result1").style = "color: green";
+          document.getElementById("result1").innerText = "Correct";
+        } else {
+          document.getElementById("result1").style = "color: red";
+          document.getElementById("result1").innerHTML =
+            "INCORRECT! The answer is <span><</span>div href='color: red'>Am i Correct?<span><</span>/div>";
+        }
+      }
+
+      function checkQues2(e) {
+        e.preventDefault();
+        if (e.target[0].checked) {
+          document.getElementById("result2").style = "color: green";
+          document.getElementById("result2").innerText = "Correct";
+        } else {
+          document.getElementById("result2").style = "color: red";
+          document.getElementById("result2").innerHTML =
+            "INCORRECT! The answer is <br><span><</span>style><br />&nbsp;&nbsp;&nbsp;color: red <br><span><</span>/style>";
+        }
+      }
+
+      function checkQues3(e) {
+        e.preventDefault();
+        console.log("e", e);
+        if (e.target[2].checked) {
+          document.getElementById("result3").style = "color: green";
+          document.getElementById("result3").innerText = "Correct";
+        } else {
+          document.getElementById("result3").style = "color: red";
+          document.getElementById("result3").innerHTML =
+            "INCORRECT! The answer is <br><span><</span>link rel='stylesheet' href='./style.css'<span></span>>";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,5 +1,8 @@
 <html>
-  <head></head>
+  <head>
+    <link rel="stylesheet" href="../../style.css" />
+    <style></style>
+  </head>
   <body>
     <nav>
       <ul>
@@ -8,6 +11,9 @@
         </li>
         <li>
           <a href="/views/pages/experience.html">Experience</a>
+        </li>
+        <li>
+          <a href="/views/pages/aboutme.html">About Me</a>
         </li>
         <li>
           <a href="/views/pages/works.html">Works</a>
@@ -20,16 +26,11 @@
     <h1>This is contact.html</h1>
 
     <form onsubmit="sendMessage(event)">
-      <label for="fName">First Name</label>
-      <input type="text" name="fName" id="fName" />
-
+      <label for="lName" class="meena">First Name</label>
+      <input type="text" name="fName" id="fName" /><br />
+      <label for="fName" class="meena">Last Name</label>
+      <input type="text" name="lName" id="lName" placeholder="Last Name" />
       <br />
-
-      <label for="lName">Last Name</label>
-      <input type="text" name="lName" id="lName" />
-
-      <br />
-
       <textarea
         id="message"
         cols="30"
@@ -39,7 +40,7 @@
 
       <br />
 
-      <input type="submit" name="submit" id="submit" value="Click here" />
+      <input type="submit" name="submit" id="submit" />
     </form>
 
     <span>Full Name:</span>
@@ -53,75 +54,6 @@
     <span id="ref3"></span>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     <script>
       function sendMessage(e) {
         e.preventDefault();
