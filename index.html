@@ -34,11 +34,30 @@
         color: black;
         text-decoration: none;
       }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      nav ul,
+      nav div {
+        /* border: 1px solid red; */
+      }
+
+      li {
+        /* border: 1px solid green; */
+      }
+
+      .nav-menu {
+        display: flex;
+        justify-content: start;
+      }
     </style>
   </head>
   <body>
     <nav>
-      <ul>
+      <ul class="nav-menu">
         <li>
           <a href="/">Home</a>
         </li>
@@ -56,9 +75,9 @@
         </li>
       </ul>
 
-      <div>Logo</div>
+      <div class="nav-logo">Logo</div>
 
-      <div>
+      <div class="nav-download-resume">
         <button class="download-resume-btn gologolo-border">
           Download Resume
         </button>
