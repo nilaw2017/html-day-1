@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+}
+
+#home {
+  color: blue;
+}
+li[draggable] {
+  color: green;
+}
+.home {
+  color: red;
+}
+li {
+  color: grey !important;
+  color: aqua;
+}
