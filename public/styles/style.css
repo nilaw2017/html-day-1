@@ -1,7 +1,6 @@
 ul {
   list-style: none;
 }
-
 #home {
   color: blue;
 }
@@ -14,4 +13,10 @@ li[draggable] {
 li {
   color: grey !important;
   color: aqua;
+}
+
+.test {
+  background-color: red;
+  color: white;
+  margin: 0 50px;
 }
