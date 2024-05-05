@@ -1,35 +1,15 @@
 <html>
   <head>
-    <style>
-      table {
-        border: 1px solid black;
-      }
-
-      td {
-        padding: 20px;
-        background-color: aqua;
-      }
-
-      input[checked="false"] {
-        width: 50px;
-        height: 50px;
-      }
-
-      .bg-red {
-        background-color: black;
-        color: white;
-      }
-      .bg-red:hover {
-        background-color: blue;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/public/styles/style.css" />
   </head>
   <body>
     <nav>
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
+      <ul class="nav-menu">
+        <li><a href="/index.html">Home</a></li>
         <li>
           <a href="/views/pages/experience.html">Experience</a>
         </li>
@@ -43,68 +23,57 @@
           <a href="/views/pages/contact.html">Contact</a>
         </li>
       </ul>
+
+      <div class="nav-logo">Logo</div>
+
+      <div class="nav-download-resume">
+        <button class="download-resume-btn gologolo-border">
+          Download Resume
+        </button>
+      </div>
     </nav>
-    <h1>About Me</h1>
-    <p>I am Nilaw Manandhar</p>
 
-    <!-- Below code is about my educational history -->
-    <!-- <table style="border-collapse: collapse" border="2">
-      <caption>
-        This is my Education Detail
-      </caption>
-      <thead>
-        <tr>
-          <th>LEVEL</th>
-          <th>SCHOOL NAME</th>
-          <th>PASS YEAR</th>
-          <th>maths</th>
-          <th>science</th>
-        </tr>
-      </thead>
+    <section>
+      <div>
+        <h1 class="bio-title">ABOUT <span>ME</span></h1>
+      </div>
 
-      <tbody>
-        <tr>
-          <td>slc</td>
-          <td rowspan="2">mahendra bhawan</td>
-          <td>2058</td>
-          <td colspan="2">99</td>
-        </tr>
-        <tr>
-          <td>+2</td>
-          <td>2060</td>
-          <td>99</td>
-          <td>100</td>
-        </tr>
-      </tbody>
-    </table> -->
+      <div class="personal-achievements">
+        <!-- PERSONAL INFOS -->
+        <div>
+          <h2>PERSONAL INFOS</h2>
 
-    <table>
-      <tr>
-        <td style="background-color: #a23"></td>
-        <td style="background-color: blue"></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td style="background-color: blueviolet"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
+          <ul class="personal-details">
+            <li>Full Name: <span> Nilaw Manandhar</span></li>
+            <li>Age: <span> 23</span></li>
+            <li>Nationality: <span> Nepalese</span></li>
+            <li>Address: <span> Kathmandu, Nepal</span></li>
+            <li>Phone No: <span> 980412022</span></li>
+            <li>Language: <span> Newari</span></li>
+          </ul>
+
+          <button class="download-cv-btn">
+            Download CV <i class="fa-solid fa-cloud-arrow-down"></i>
+          </button>
+        </div>
+
+        <!-- ACHIEVEMENTS -->
+        <div>
+          <h2>ACHIEVEMENTS</h2>
+
+          <ul>
+            <li>Quiz Competition</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- 
       QUIZ QUESTIONS
      -->
-    <div>
-      <!-- Question 1 -->
-      <form onsubmit="checkQues1(event)">
+    <!-- <div> -->
+    <!-- Question 1 -->
+    <!-- <form onsubmit="checkQues1(event)">
         <h3>
           1. What is the correct syntax for adding inline CSS to an HTML
           element?
@@ -137,10 +106,10 @@
         <br />
         <input type="submit" name="" id="" value="Check answer" />
         <h2 id="result1"></h2>
-      </form>
+      </form> -->
 
-      <!-- Question 2 -->
-      <form onsubmit="checkQues2(event)">
+    <!-- Question 2 -->
+    <!-- <form onsubmit="checkQues2(event)">
         <h3>
           2. Which of the following is the correct syntax for adding an internal
           stylesheet to an HTML document?
@@ -197,10 +166,10 @@
           value="Check answer"
         />
         <h2 id="result2"></h2>
-      </form>
+      </form> -->
 
-      <!-- Question 3 -->
-      <form onsubmit="checkQues3(event)">
+    <!-- Question 3 -->
+    <!-- <form onsubmit="checkQues3(event)">
         <h3>
           3. What is the correct syntax for linking an external stylesheet to an
           HTML document?
@@ -238,9 +207,9 @@
         <input type="submit" name="" id="" value="Check answer" />
         <h2 id="result3"></h2>
       </form>
-    </div>
+    </div> -->
 
-    <script>
+    <!-- <script>
       function checkQues1(e) {
         e.preventDefault();
         if (e.target[1].checked) {
@@ -277,6 +246,6 @@
             "INCORRECT! The answer is <br><span><</span>link rel='stylesheet' href='./style.css'<span></span>>";
         }
       }
-    </script>
+    </script> -->
   </body>
 </html>

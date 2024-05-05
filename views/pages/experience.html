@@ -1,5 +1,36 @@
-<nav>
-      <ul>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .nav-menu {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
+      .top-bar .logo-box {
+        justify-self: center;
+      }
+      .top-bar .download-resume-btn {
+        justify-self: end;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="top-bar">
+      <ul class="nav-menu">
         <li>
           <a href="/">Home</a>
         </li>
@@ -16,7 +47,17 @@
           <a href="/views/pages/contact.html">Contact</a>
         </li>
       </ul>
-    </nav>
-<h1>This is experience.html</h1>
 
-<img src="" alt="" />
+      <div class="logo-box">
+        <p>Logo</p>
+      </div>
+
+      <div class="download-resume-btn">
+        <button>Download Resume</button>
+      </div>
+    </nav>
+    <h1>This is experience.html</h1>
+
+    <img src="" alt="" />
+  </body>
+</html>

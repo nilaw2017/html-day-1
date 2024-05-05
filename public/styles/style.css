@@ -1,22 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
 ul {
   list-style: none;
 }
-#home {
-  color: blue;
-}
-li[draggable] {
-  color: green;
-}
-.home {
-  color: red;
-}
-li {
-  color: grey !important;
-  color: aqua;
+a {
+  text-decoration: none;
 }
 
-.test {
-  background-color: red;
-  color: white;
-  margin: 0 50px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section {
+  width: 992px;
+  margin: auto;
+  margin-top: 48px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.download-resume-btn {
+  padding: 16px;
+  border-radius: 30px;
+  background-color: #f9d74c;
+  border: none;
+}
+.profile-img {
+  width: 100px;
+  border-radius: 50%;
+  background-color: #f9d74c;
+}
+.hero-section {
+  text-align: center;
+}
+.hero-section div {
+  padding: 48px;
+}
+.intro-box h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  color: #6c757d;
+}
+.my-status {
+  color: #ff4c60;
+}
+.social-media-boxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav .nav-menu li {
+  width: 75px;
+}
+nav .nav-menu a {
+  color: #454360;
+}
+
+nav .nav-menu a:hover {
+  font-weight: 600;
+}
+
+.bio-title {
+  color: #454360;
+  font-size: 56px;
+  font-weight: 900;
+  text-shadow: 5px 5px 2px #ccc;
+  text-align: center;
+  span {
+    color: #ff4c60;
+  }
+}
+.personal-achievements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  > div:nth-child(2) {
+    border: 1px solid #ccc;
+  }
+  .personal-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    li {
+      color: #5e5c7f;
+      span {
+        color: #000;
+      }
+    }
+  }
+  .download-cv-btn {
+    width: 300px;
+    margin: auto;
+    padding: 16px 0;
+    border-radius: 30px;
+  }
 }
