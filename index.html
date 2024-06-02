@@ -7,13 +7,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link
+      rel="stylesheet"
+      href="./public/style/bootstrap.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style></style>
     <link rel="stylesheet" href="/public/styles/style.css" />
   </head>
   <body>
+    <div class="test1"></div>
     <nav>
-      <ul class="nav-menu">
+      <ul class="nav-menu d-flex d-md-block">
         <li><a href="/index.html">Home</a></li>
         <li>
           <a href="/views/pages/experience.html">Experience</a>
@@ -29,7 +36,9 @@
         </li>
       </ul>
 
-      <div class="nav-logo">Logo</div>
+      <div class="nav-logo">
+        <a href="/projects/DrumKit/index.html">Projects</a>
+      </div>
 
       <div class="nav-download-resume">
         <button class="download-resume-btn gologolo-border">
@@ -37,7 +46,65 @@
         </button>
       </div>
     </nav>
-
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <!-- Hero Section -->
     <section class="hero-section">
       <div>
@@ -77,11 +144,149 @@
     <!-- <div>
       <h1 class="meena">This is landing page</h1>
 
-      <p id="krishna">Deepesh Welcome back</p>
+      <p id="krishna">"Deepesh's Welcome back" "Hello World", asd</p>
       <p class="pratik chandan">Pratik Welcome back again</p>
       <p id="Krishna">Hello Krishna and CHandan</p>
       <h1>Hello nilaw</h1>
     </div>
     <img src="/public/images/d.jpeg" alt="Digital Logic" /> -->
+
+    <script>
+      const krishna = "me";
+      var nilaw = "blue";
+      console.log(
+        `Krishna's love of life said,"He loves, ${krishna}very much". So nilaw also loves color ${nilaw}`,
+      );
+
+      // OPERATORS
+
+      // Arithmetic Operator
+      var a = 10;
+      var b = 5;
+
+      // Addition
+      var operation = a * b;
+      console.log("Product", operation);
+      var mod = a % b;
+      // console.log("MODULUES", mod);
+
+      // Assignment Operator
+      // = == ===
+
+      // Comparision Operator
+      // == === != <= >= < >
+      // var something = "15";
+      // if (something === 15) {
+      //   console.log("it is correct");
+      // } else {
+      //   console.log("It is INCORRECT");
+      // }
+
+      // String Operator
+      var chandan = "He is handsome";
+      function chandans() {
+        console.log("HELLOWW WORLD");
+      }
+      chandans();
+      console.log(chandan.length);
+
+      // Logical Operator
+      // && ||
+      var num1 = 10;
+      var num2 = 20;
+      var sum = num1 + num2;
+      var name = "Krishna";
+      // if (num1 + num2 == sum && name == "krishna") {
+      //   console.log("True");
+      // } else {
+      //   console.log("FALSE");
+      // }
+
+      // Ternary Operator
+      // if (name == "Krishna") {
+      //   console.log("TURU");
+      // } else {
+      //   console.log("FALSU");
+      // }
+      name == "Krishna" ? console.log("TURU") : console.log("FALSE");
+
+      // console.log(typeof name);
+
+      var c = 3;
+      // console.log(c++);
+      // console.log(c);
+    </script>
+
+    <!-- ARRAY, if else, loop -->
+    <script>
+      var krishna1 = ["Radha", "Pari", "Hari"];
+      // console.log(krishna1[1]);
+      // var chandan = {
+      //   name: "Radha",
+      //   age: 21,
+      //   address: "Lalitpur",
+      // };
+      // var name = "Krishna";
+
+      // console.log(
+      //   `His/Her name is ${chandan.name} and his/her age is ${chandan.age}`,
+      // );
+
+      // for (i = 1; i <= 10; i++) {
+      //   console.log(i);
+      // }
+      // var j = 1;
+      // while (j <= 0) {
+      //   j;
+      //   console.log("j", j);
+      //   j++;
+      // }
+      // let i = 1;
+      // do {
+      //   console.log("i", i);
+      //   i++;
+      // } while (i <= 0);
+
+      // var subjects = ["Science", "Maths", "English", "Nepali"];
+      // subjects.forEach((subject) => {
+      //   console.log("test", subject);
+      // });
+    </script>
+
+    <script src="/public/js/function.js"></script>
+
+    <!-- <script>
+      var nilaw = "TURURURU";
+      var deepesh = nilaw;
+      const chandan = "Aalu";
+      krishna = chandan;
+
+      console.log(krishna);
+    </script> -->
+
+    <script>
+      // array stores the values with similar data types like number or text
+
+      var arr_name = ["Nilaw", "Chandan", "Krishna", "Deepesh"];
+      console.log(arr_name[3]);
+      var obj_name = {
+        name: "Deepesh",
+        age: {
+          young: 14,
+          adult: 24,
+          old: 60,
+        },
+        address: "Kalanki",
+      };
+
+      console.log(obj_name.age.young);
+    </script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
