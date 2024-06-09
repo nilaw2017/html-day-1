@@ -1,9 +1,38 @@
 <html>
-    <head>
+  <head>
+    <title>Create a new account</title>
+  </head>
+  <body>
+    <h1>Create a new account</h1>
+    <h4>It's quick and easy</h4>
+    <form>
+      <input type="text" placeholder="First Name" />
+      <input type="text" placeholder="Last Name" />
+      <br />
+      <input type="number" placeholder="Mobile number" />
+      <br />
+      <input type="email" placeholder="Email" />
+      <br />
+      <label>Birthday</label>
+      <select>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+      </select>
+      <br />
+      <label>Gender</label>
+      <br />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" />
 
-    </head>
-
-    <body>
-        <P>Hello I am Riya.</P>
-    </body>
+      <label for="Custom">Custom</label>
+      <input type="radio" name="gender" id="Custom" />
+      <br />
+      <input type="submit" value="Sign Up" />
+    </form>
+    <a href="./aboutme.html">Already have an account?</a>
+  </body>
 </html>
