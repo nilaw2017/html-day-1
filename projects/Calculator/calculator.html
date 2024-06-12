@@ -1,0 +1,52 @@
+<html>
+  <head></head>
+  <body>
+    <textarea name="" id="result"></textarea>
+
+    <div style="display: grid; grid-template-columns: repeat(5, 1fr)">
+      <!-- 1st Row -->
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button disabled>DEL</button>
+      <button disabled>AC</button>
+      <!-- 2nd row -->
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>X</button>
+      <button>/</button>
+
+      <!-- 3rd Row -->
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>+</button>
+      <button>-</button>
+
+      <!-- 4th Row -->
+      <button>0</button>
+      <button disabled>.</button>
+      <button disabled>x10</button>
+      <button disabled>Ans</button>
+      <button>=</button>
+    </div>
+
+    <script>
+      let arr = [];
+      let buttons = document.querySelectorAll("button");
+      console.log(buttons);
+      buttons.forEach((button) => {
+        console.log(button.innerText);
+        button.addEventListener("click", (event) => {
+          let result = document.querySelector("#result");
+
+          arr.push(button.innerText);
+          let stringArr = arr.toString();
+          let test = stringArr.replace(/,/g, "");
+          result.innerHTML = test;
+        });
+      });
+    </script>
+  </body>
+</html>
