@@ -33,7 +33,7 @@
     </div>
 
     <script>
-      let expression=""
+      let expression = "";
       let buttons = document.querySelectorAll("button:not([onclick])");
       console.log(buttons);
       buttons.forEach((button) => {
@@ -51,11 +51,11 @@
           document.querySelector("#result").innerHTML = result;
           console.log(result); // Output the result
 
-          expression = '';
+          expression = "";
         } catch (error) {
-          console.error('Error evaluating expression:', error);
-          document.querySelector("#result").innerHTML = 'Error';
-          expression = '';
+          console.error("Error evaluating expression:", error);
+          document.querySelector("#result").innerHTML = "Error";
+          expression = "";
         }
       }
     </script>
