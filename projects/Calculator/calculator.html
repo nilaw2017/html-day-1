@@ -5,7 +5,7 @@
 
     <div style="display: grid; grid-template-columns: repeat(5, 1fr)">
       <!-- 1st Row -->
-      <button>7</button>
+      <button id="seven">7</button>
       <button>8</button>
       <button>9</button>
       <button disabled>DEL</button>
@@ -14,15 +14,15 @@
       <button>4</button>
       <button>5</button>
       <button>6</button>
-      <button>*</button>
-      <button>/</button>
+      <button class="symbol">*</button>
+      <button class="symbol">/</button>
 
       <!-- 3rd Row -->
       <button>1</button>
       <button>2</button>
-      <button>3</button>
-      <button>+</button>
-      <button>-</button>
+      <button class="three">3</button>
+      <button class="symbol">+</button>
+      <button class="symbol">-</button>
 
       <!-- 4th Row -->
       <button>0</button>
@@ -31,11 +31,36 @@
       <button disabled>Ans</button>
       <button onclick="calculate()">=</button>
     </div>
+    th
+    <script>
+      var symbol = "false";
+      document.querySelector("#seven").addEventListener("click", () => {
+        var result = document.querySelector("#result");
+        result.innerHTML = "my name is krishna karki";
+        result.style.color = "red";
+        result.style.fontSize = "50px";
+        if (symbol == "true") {
+          symbol = "false";
+          console.log(symbol);
+        } else if (symbol == "false") {
+          symbol = "true";
+          console.log(symbol);
+        }
+
+        // document.querySelector(".three").innerHTML = "three";
+        // // console.log(document.querySelectorAll(".symbol"));
+
+        // const arr = document.querySelectorAll(".symbol");
+
+        // arr.forEach((symbol) => {
+        //   symbol.style.border = "5px solid blue";
+        // });
+      });
+    </script>
 
     <script>
       let expression = "";
       let buttons = document.querySelectorAll("button:not([onclick])");
-      console.log(buttons);
       buttons.forEach((button) => {
         button.addEventListener("click", (event) => {
           let result = document.querySelector("#result");
